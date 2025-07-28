@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "SALIDtranslit"
+version = "0.0.1"
+authors = [
+  { name="Rini Bhattacharya Mehta", email="rbhttchr@illinois.edu" },
+  { name="Adarsh Krishnan", email="adarshk5@illinois.edu" },
+]
+description = "A package to enable accurate transliteration from Bengali to Hindi"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/adarshk-5/SALIDtranslit"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/salidtranslit"]
+include = ["src/salidtranslit/py.typed"]
