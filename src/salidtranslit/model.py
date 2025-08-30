@@ -7,6 +7,12 @@ import unicodedata
 from nltk.metrics.distance import edit_distance
 from typing import Tuple
 
+# TODO: Construct trie for common ambiguous matches
+def dictionary_match(partial_trans: str):
+    # Word replacement is same idea as transliteration, but if a word has a ब which isn't replaced, ambiguous should be switched to True
+
+    return output, ambiguous
+
 _script_dir = os.path.dirname(__file__)
 def load_finetuned_mt5(model_path: str = f"{_script_dir}/mt5_finetuned") -> Tuple[MT5ForConditionalGeneration, MT5Tokenizer]:
     """

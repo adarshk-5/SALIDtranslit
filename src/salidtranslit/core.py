@@ -6,7 +6,7 @@ from .reference import (
     end_of_term, iast_vows, iast_cons,
     itrans_vows, itrans_cons
 )
-from .model import load_finetuned_mt5, correct_transliteration
+from .model import dictionary_match, load_finetuned_mt5, correct_transliteration
 import re
 
 model: MT5ForConditionalGeneration
@@ -137,7 +137,12 @@ def ben_dev(input_str: str) -> str:
         if outchar == "ब":
             ambiguous = True
 
+    # TODO: Add preliminary check for dictionary words
     if ambiguous:
+        output, ambiguous = dictionary_match(output)
+
+    if ambiguous:
+        # TODO: Break passages into individual sentences to improve accuracy 
         output = correct_transliteration(input_str, output, model, tokenizer)
 
     return output
