@@ -137,7 +137,6 @@ def ben_dev(input_str: str) -> str:
         if outchar == "ब":
             ambiguous = True
 
-    # TODO: Add preliminary check for dictionary words
     if ambiguous:
         output, ambiguous = dictionary_match(output)
 

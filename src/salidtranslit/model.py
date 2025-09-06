@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from .reference import common_ambiguities_trie
 from transformers import MT5ForConditionalGeneration, MT5Tokenizer
 import torch
 import os
@@ -7,9 +8,24 @@ import unicodedata
 from nltk.metrics.distance import edit_distance
 from typing import Tuple
 
-# TODO: Construct trie for common ambiguous matches
 def dictionary_match(partial_trans: str):
-    # Word replacement is same idea as transliteration, but if a word has a ब which isn't replaced, ambiguous should be switched to True
+    """
+    Replaces known ambiguous words using common_ambiguities_trie.
+    """
+    output = ""
+    i = 0
+    ambiguous = False
+    while i < len(partial_trans):
+        longest_match, match_len = common_ambiguities_trie.searchLongestMatch(partial_trans[i:])
+        if longest_match != None:
+            add = longest_match.rep[0]
+            i += match_len
+        else:
+            add = partial_trans[i]
+            i += 1
+        output += add
+        if add == "ब":
+            ambiguous = True
 
     return output, ambiguous
 
@@ -68,6 +84,8 @@ Correct transliteration:
             corrected_trans += _nukta_map[corrected_trans_norm[i]]
         else:
             corrected_trans += corrected_trans_norm[i]
+    if corrected_trans_norm[-1] != "़":
+        corrected_trans += corrected_trans_norm[-1]
 
     edit = edit_distance(corrected_trans, partial_trans)
     rep_count = partial_trans.count("ब")

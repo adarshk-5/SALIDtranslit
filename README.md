@@ -4,5 +4,5 @@ SALIDtranslit is a Python package that aims to provide transliteration for India
 
 ## Next Steps:
 - [ ] Verify accuracy of training/validation/evaluation datasets and clean/refine as needed
-- [ ] Implement system for catching common ambiguous words without using transliteration model
+- [x] Implement system for catching common ambiguous words without using transliteration model
 - [ ] Implement post-processing system for transliteration model to reduce errors arising from model output

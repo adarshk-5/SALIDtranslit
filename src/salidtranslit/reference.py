@@ -8,16 +8,19 @@ _devanagari: Dict[str, List[str]]
 _bengali: Dict[str, List[str]]
 _iast: Dict[str, List[str]]
 _itrans: Dict[str, List[str]]
+_common_ambiguities: Dict[str, str]
 
 _script_dir = os.path.dirname(__file__)
 with open(f"{_script_dir}/ScriptMap/devanagari.json", encoding="utf-8") as _dev_json, \
      open(f"{_script_dir}/ScriptMap/bengali.json", encoding="utf-8") as _ben_json, \
      open(f"{_script_dir}/ScriptMap/iast.json", encoding="utf-8") as _iast_json, \
-     open(f"{_script_dir}/ScriptMap/itrans.json", encoding="utf-8") as _itrans_json:
+     open(f"{_script_dir}/ScriptMap/itrans.json", encoding="utf-8") as _itrans_json, \
+     open(f"{_script_dir}/ScriptMap/common_ambiguities.json", encoding="utf-8") as _common_ambiguities_json:
     _devanagari = json.load(_dev_json)
     _bengali = json.load(_ben_json)
     _iast = json.load(_iast_json)
     _itrans = json.load(_itrans_json)
+    _common_ambiguities = json.load(_common_ambiguities_json)
 
 # Build tries from mappings
 dev_trie: trie.Trie = trie.Trie()
@@ -35,6 +38,10 @@ for _term, _mapping in _iast.items():
 itrans_trie: trie.Trie = trie.Trie()
 for _term, _mapping in _itrans.items():
     itrans_trie.insert(_term, _mapping)
+
+common_ambiguities_trie: trie.Trie = trie.Trie()
+for _term, _mapping in _common_ambiguities.items():
+    common_ambiguities_trie.insert(_term, [_mapping])
 
 # Character sets
 end_of_term: Set[str] = {' ', '\n', '\t', '-', '.', ',', '?', '!', "'", '"', 'ঽ', 'ऽ', '(', ')', '[', ']', '{', '}'}
