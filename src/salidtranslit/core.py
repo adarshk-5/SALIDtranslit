@@ -6,12 +6,8 @@ from .reference import (
     end_of_term, iast_vows, iast_cons,
     itrans_vows, itrans_cons
 )
-from .model import dictionary_match, load_finetuned_mt5, correct_transliteration
-import re
 
-model: MT5ForConditionalGeneration
-tokenizer: MT5Tokenizer
-model, tokenizer = load_finetuned_mt5()
+import re
 
 def dev_ben(input_str: str) -> str:
     """
@@ -98,10 +94,7 @@ def dev_itrans(input_str: str) -> str:
 
 def ben_dev(input_str: str) -> str:
     """
-    Transliterates Bengali script to Devanagari script.
-
-    Applies heuristic disambiguation and optionally uses a fine-tuned mT5 model
-    to correct ambiguous outputs.
+    Transliterates Bengali script to Devanagari script using the ben_trie.
 
     Args:
         input_str (str): Input string in Bengali script.
@@ -112,10 +105,8 @@ def ben_dev(input_str: str) -> str:
     output = ""
     i = 0
     state = "s"
-    ambiguous = False
     while i < len(input_str):
         char = re.sub(r"়|़", "", input_str[i])
-        char = input_str[i]
         if char in ben_b_cons:
             state = "bc"
         elif state == "bc" and char == "্":
@@ -134,15 +125,6 @@ def ben_dev(input_str: str) -> str:
         else:
             i += 1
         output += outchar
-        if outchar == "ब":
-            ambiguous = True
-
-    if ambiguous:
-        output, ambiguous = dictionary_match(output)
-
-    if ambiguous:
-        # TODO: Break passages into individual sentences to improve accuracy 
-        output = correct_transliteration(input_str, output, model, tokenizer)
 
     return output
 
