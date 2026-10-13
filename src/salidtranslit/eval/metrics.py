@@ -112,11 +112,6 @@ def exact_match(expected, predicted):
 # the single Bengali letter ব (U+09AC), so each occurrence is one ba/va decision.
 BA_VA_CLASSES = {"ba": "\u092C", "va": "\u0935"}   # ब , व
 
-# To add another contrast (e.g. your ya/ya issue), define another dict mapping a
-# class name to the Devanagari character, and pass it to decision_scores().
-# I have NOT filled one in because I don't know which exact pair of characters
-# your ya/ya definition covers -- fill that in yourself.
-
 _PLACEHOLDER = "\uE000"  # private-use code point; never occurs in the data
 
 

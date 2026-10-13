@@ -34,8 +34,6 @@ ALL_CSV = None
 EVAL_DIR = None
 
 # Name of Aksharamukha's built-in Bengali ba->va post-processing option.
-# Leave as None until you have confirmed the exact string (see my notes); the
-# string-replacement baseline below does not need it.
 AKSHARAMUKHA_BAVA_OPTION = None
 
 # False -> recompute every system output from all.csv (required whenever the
@@ -121,11 +119,6 @@ def dev_ben_prepare(row):
     vals = row.values
     author, title, author_title, bengali, hindi = vals
     return ind_prepare(hindi, bengali, "Devanagari", "Bengali")
-
-# ---------------------------------------------------------------------------
-# Everything below this point (down to evaluate()) is unchanged from your
-# original, except that the cached-CSV overwrite is now opt-in.
-# ---------------------------------------------------------------------------
 
 # use aksharamukha to romanize ben and dev from eval_set_final.csv
     # df.apply function to create new df
@@ -256,9 +249,6 @@ def score_system(expected, predicted):
     expected_bleu = [[item] for item in expected]
     ter = corpus_ter(expected, predicted)
     return {
-        # NOTE: nltk's corpus_bleu iterates over the strings it is given, so
-        # with plain strings this is a CHARACTER-level BLEU. METEOR is
-        # token-level and TER is word-level; say so in the paper.
         "bleu": corpus_bleu(expected_bleu, predicted),
         "meteor": corpus_meteor(expected, predicted),
         "ter": ter["score"],
