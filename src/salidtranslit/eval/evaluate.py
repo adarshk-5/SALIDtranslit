@@ -28,9 +28,10 @@ from metrics import (
 # ---------------------------------------------------------------------------
 # Configuration
 # ---------------------------------------------------------------------------
-INDIC_NLP_RESOURCES = '/Users/adarshk/Downloads/NCSA SPIN/Code + Data/indic_nlp_resources'
-ALL_CSV = "/Users/adarshk/Downloads/NCSA SPIN/SALIDtranslit/data/all.csv"
-EVAL_DIR = "/Users/adarshk/Downloads/NCSA SPIN/SALIDtranslit/src/salidtranslit/eval/"
+# REPLACE THE FOLLOWING WITH YOUR LOCAL FILEPATHS
+INDIC_NLP_RESOURCES = None
+ALL_CSV = None
+EVAL_DIR = None
 
 # Name of Aksharamukha's built-in Bengali ba->va post-processing option.
 # Leave as None until you have confirmed the exact string (see my notes); the

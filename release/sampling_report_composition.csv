@@ -1,0 +1,149 @@
+﻿preceding_consonant,label,dimension,value,sentences
+(non-conjunct),ba,author,Saratchandra Chattopadhyay,31
+(non-conjunct),ba,author,Rabindranath Tagore,33
+(non-conjunct),ba,author,Bankim Chandra Chatterjee,30
+(non-conjunct),ba,author,Michael Madhusudan Dutta,17
+(non-conjunct),ba,author,Sukanta Bhattacharya,25
+(non-conjunct),ba,author,Sukumar Ray,32
+(non-conjunct),ba,author,Upendrakishore Ray Chowdhury,32
+(non-conjunct),ba,length_bin,3,74
+(non-conjunct),ba,length_bin,1,65
+(non-conjunct),ba,length_bin,2,61
+স,va,author,Bankim Chandra Chatterjee,57
+স,va,author,Saratchandra Chattopadhyay,57
+স,va,author,Rabindranath Tagore,59
+স,va,author,Michael Madhusudan Dutta,5
+স,va,author,Sukanta Bhattacharya,9
+স,va,author,Sukumar Ray,9
+স,va,author,Upendrakishore Ray Chowdhury,4
+স,va,length_bin,2,60
+স,va,length_bin,3,78
+স,va,length_bin,1,62
+র,ba,author,Bankim Chandra Chatterjee,65
+র,ba,author,Saratchandra Chattopadhyay,55
+র,ba,author,Rabindranath Tagore,51
+র,ba,author,Michael Madhusudan Dutta,2
+র,ba,author,Sukanta Bhattacharya,6
+র,ba,author,Sukumar Ray,16
+র,ba,author,Upendrakishore Ray Chowdhury,9
+র,ba,length_bin,2,56
+র,ba,length_bin,3,90
+র,ba,length_bin,1,58
+শ,va,author,Bankim Chandra Chatterjee,61
+শ,va,author,Rabindranath Tagore,60
+শ,va,author,Saratchandra Chattopadhyay,57
+শ,va,author,Sukanta Bhattacharya,5
+শ,va,author,Sukumar Ray,16
+শ,va,author,Upendrakishore Ray Chowdhury,4
+শ,va,length_bin,1,66
+শ,va,length_bin,2,63
+শ,va,length_bin,3,74
+দ,va,author,Rabindranath Tagore,65
+দ,va,author,Saratchandra Chattopadhyay,63
+দ,va,author,Bankim Chandra Chatterjee,64
+দ,va,author,Sukanta Bhattacharya,4
+দ,va,author,Sukumar Ray,7
+দ,va,length_bin,3,74
+দ,va,length_bin,1,64
+দ,va,length_bin,2,65
+ম,ba,author,Saratchandra Chattopadhyay,59
+ম,ba,author,Bankim Chandra Chatterjee,57
+ম,ba,author,Rabindranath Tagore,60
+ম,ba,author,Sukanta Bhattacharya,2
+ম,ba,author,Sukumar Ray,22
+ম,ba,author,Upendrakishore Ray Chowdhury,5
+ম,ba,length_bin,3,85
+ম,ba,length_bin,2,60
+ম,ba,length_bin,1,60
+জ,va,author,Saratchandra Chattopadhyay,58
+জ,va,author,Bankim Chandra Chatterjee,57
+জ,va,author,Rabindranath Tagore,57
+জ,va,author,Sukanta Bhattacharya,10
+জ,va,author,Sukumar Ray,15
+জ,va,author,Upendrakishore Ray Chowdhury,8
+জ,va,length_bin,1,65
+জ,va,length_bin,3,78
+জ,va,length_bin,2,62
+ত,va,author,Rabindranath Tagore,66
+ত,va,author,Bankim Chandra Chatterjee,65
+ত,va,author,Saratchandra Chattopadhyay,64
+ত,va,author,Sukanta Bhattacharya,1
+ত,va,author,Sukumar Ray,9
+ত,va,length_bin,1,66
+ত,va,length_bin,3,73
+ত,va,length_bin,2,66
+ধ,va,author,Saratchandra Chattopadhyay,50
+ধ,va,author,Bankim Chandra Chatterjee,71
+ধ,va,author,Rabindranath Tagore,70
+ধ,va,author,Michael Madhusudan Dutta,1
+ধ,va,author,Sukanta Bhattacharya,4
+ধ,va,author,Sukumar Ray,5
+ধ,va,author,Upendrakishore Ray Chowdhury,1
+ধ,va,length_bin,3,80
+ধ,va,length_bin,2,63
+ধ,va,length_bin,1,59
+হ,va,author,Rabindranath Tagore,93
+হ,va,author,Bankim Chandra Chatterjee,23
+হ,va,author,Saratchandra Chattopadhyay,84
+হ,va,author,Michael Madhusudan Dutta,1
+হ,va,length_bin,2,71
+হ,va,length_bin,3,71
+হ,va,length_bin,1,59
+ব,ba,author,Bankim Chandra Chatterjee,55
+ব,ba,author,Rabindranath Tagore,50
+ব,ba,author,Saratchandra Chattopadhyay,50
+ব,ba,author,Sukanta Bhattacharya,2
+ব,ba,author,Sukumar Ray,8
+ব,ba,author,Upendrakishore Ray Chowdhury,1
+ব,ba,length_bin,2,47
+ব,ba,length_bin,3,93
+ব,ba,length_bin,1,26
+ছ,va,author,Saratchandra Chattopadhyay,56
+ছ,va,author,Rabindranath Tagore,132
+ছ,va,author,Bankim Chandra Chatterjee,10
+ছ,va,author,Sukanta Bhattacharya,2
+ছ,va,length_bin,3,105
+ছ,va,length_bin,2,71
+ছ,va,length_bin,1,24
+ন,va,author,Rabindranath Tagore,64
+ন,va,author,Bankim Chandra Chatterjee,41
+ন,va,author,Saratchandra Chattopadhyay,17
+ন,va,length_bin,2,46
+ন,va,length_bin,3,55
+ন,va,length_bin,1,21
+ল,va,author,Rabindranath Tagore,84
+ল,va,author,Saratchandra Chattopadhyay,2
+ল,va,author,Bankim Chandra Chatterjee,1
+ল,va,length_bin,3,27
+ল,va,length_bin,1,25
+ল,va,length_bin,2,35
+থ,va,author,Rabindranath Tagore,70
+থ,va,length_bin,3,28
+থ,va,length_bin,2,23
+থ,va,length_bin,1,19
+গ,va,author,Bankim Chandra Chatterjee,33
+গ,va,author,Saratchandra Chattopadhyay,5
+গ,va,author,Rabindranath Tagore,4
+গ,va,length_bin,1,8
+গ,va,length_bin,3,19
+গ,va,length_bin,2,15
+ক,va,author,Rabindranath Tagore,12
+ক,va,author,Saratchandra Chattopadhyay,2
+ক,va,author,Sukumar Ray,1
+ক,va,length_bin,1,1
+ক,va,length_bin,3,9
+ক,va,length_bin,2,5
+ণ,va,author,Bankim Chandra Chatterjee,3
+ণ,va,author,Rabindranath Tagore,1
+ণ,va,length_bin,2,2
+ণ,va,length_bin,1,1
+ণ,va,length_bin,3,1
+ষ,va,author,Rabindranath Tagore,3
+ষ,va,author,Bankim Chandra Chatterjee,1
+ষ,va,length_bin,1,2
+ষ,va,length_bin,2,1
+ষ,va,length_bin,3,1
+খ,va,author,Bankim Chandra Chatterjee,2
+খ,va,length_bin,3,2
+য,ba,author,Bankim Chandra Chatterjee,1
+য,ba,length_bin,2,1

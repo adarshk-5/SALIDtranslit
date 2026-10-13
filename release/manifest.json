@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "all_csv": "/Users/adarshk/Downloads/NCSA SPIN/SALIDtranslit/data/all.csv",
+    "out": "release",
+    "per_stratum": 200,
+    "control": 200,
+    "seed": 0,
+    "mode": "balanced",
+    "length_bins": 3,
+    "min_words": null,
+    "max_words": null,
+    "exclude_authors": [
+      "Kazi Nazrul Islam"
+    ],
+    "allow_authors": null,
+    "control_allow_conjunct": false
+  },
+  "input_sha256": "155ab19a9e95129009c46e3ecfa0564f221f345ffaf98e95069224eb5f430784",
+  "filter_counts": {
+    "rows": 178945,
+    "excluded_author": 21547,
+    "excluded_duplicate": 3286,
+    "no_bengali_ba": 936,
+    "eligible_sentences": 153176
+  },
+  "length_bin_edges_words": [
+    8.0,
+    11.0
+  ],
+  "stratum_order": [
+    "য->ba",
+    "খ->va",
+    "ণ->va",
+    "ষ->va",
+    "ক->va",
+    "গ->va",
+    "থ->va",
+    "ল->va",
+    "ন->va",
+    "ব->ba",
+    "ছ->va",
+    "হ->va",
+    "ধ->va",
+    "ত->va",
+    "জ->va",
+    "ম->ba",
+    "দ->va",
+    "শ->va",
+    "র->ba",
+    "স->va",
+    "(non-conjunct)->ba"
+  ],
+  "released_sentences": 2334,
+  "released_labeled_occurrences": 6723,
+  "python": "3.11.5",
+  "pandas": "2.3.2",
+  "numpy": "2.3.3"
+}
